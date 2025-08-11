@@ -70,8 +70,11 @@ jspm_packages/
 
 # Gatsby files
 .cache/
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9f1d319 (Remove public from .gitignore and add client/public folder)
 # Storybook build outputs
 .out
 .storybook-out
