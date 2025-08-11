@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "framework": "create-react-app",
+  "buildCommand": "cd client && npm ci || npm install && npm run build",
+  "outputDirectory": "client/build",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
