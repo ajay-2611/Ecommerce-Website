@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { FaArrowLeft, FaCreditCard, FaEnvelope, FaLock, FaMapMarkerAlt, FaPhone, FaUser } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import api from "../api/httpClient";
 
 const CheckoutScreen = () => {
     const navigate = useNavigate();
@@ -92,7 +93,7 @@ const CheckoutScreen = () => {
             };
 
             // In a real app, you would send this to your backend API
-            // const response = await axios.post('/api/orders', orderData);
+            // const response = await api.post('/api/orders', orderData);
             
             // For now, simulate API call
             await new Promise(resolve => setTimeout(resolve, 2000));
