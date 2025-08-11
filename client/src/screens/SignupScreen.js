@@ -1,9 +1,9 @@
 // src/screens/SignupScreen.js
-import axios from "axios";
 import React, { useState } from "react";
 import { FaEnvelope, FaEye, FaEyeSlash, FaLock, FaUser, FaUserPlus } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import api from "../utils/api";
 
 const SignupScreen = () => {
     const [name, setName] = useState("");
@@ -37,7 +37,7 @@ const SignupScreen = () => {
         setSuccess("");
 
         try {
-            const response = await axios.post("/api/users", {
+            const response = await api.post("/api/users", {
                 name,
                 email,
                 password

@@ -92,7 +92,7 @@ const CheckoutScreen = () => {
             };
 
             // In a real app, you would send this to your backend API
-            // const response = await axios.post('/api/orders', orderData);
+            // const response = await api.post('/api/orders', orderData);
             
             // For now, simulate API call
             await new Promise(resolve => setTimeout(resolve, 2000));

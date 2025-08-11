@@ -1,10 +1,9 @@
 // src/screens/LoginScreen.js
-import axios from "axios";
 import React, { useState } from "react";
 import { FaEnvelope, FaEye, FaEyeSlash, FaLock, FaSignInAlt } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-
+import api from "../utils/api";
 const LoginScreen = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -22,7 +21,7 @@ const LoginScreen = () => {
         setSuccess("");
 
         try {
-            const response = await axios.post("/api/users/login", {
+            const response = await api.post("/api/users/login", {
                 email,
                 password
             });

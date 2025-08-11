@@ -102,6 +102,30 @@ The application will be available at:
 - Frontend: http://localhost:3000
 - Backend: http://localhost:5000
 
+## Deployment
+
+### Quick Deploy to Render
+
+1. **Prepare for deployment**:
+   ```bash
+   # Windows
+   deploy.bat
+   
+   # Linux/Mac
+   ./deploy.sh
+   ```
+
+2. **Push to GitHub** and connect to Render
+
+3. **Set environment variables** in Render dashboard:
+   - `MONGO_URI`: Your MongoDB Atlas connection string
+   - `JWT_SECRET`: A strong secret key
+   - `NODE_ENV`: `production`
+
+4. **Deploy!** Your app will be available at your Render URL
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+
 ## API Endpoints
 
 ### Authentication
