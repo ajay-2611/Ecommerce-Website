@@ -1,6 +1,4 @@
 # MERN E-commerce Application
-Deployment Link:https://ecommerce-website-1-mcmm.onrender.com/
-
 A full-stack e-commerce application built with the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
 ## Features
